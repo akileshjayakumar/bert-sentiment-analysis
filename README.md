@@ -86,6 +86,20 @@ result = classifier("This movie was amazing!")
 print(result)
 ```
 
-## License
+## Contributing
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Your contributions are welcome! If you have ideas for improvements or new features:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Submit a pull request.
+
+## Contact Information
+
+For more information, please reach out to me at:
+
+- **Email**: jayakuma006@mymail.sim.edu.sg
+- **LinkedIn**: [Akilesh Jayakumar on LinkedIn](https://www.linkedin.com/in/akileshjayakumar/)
+- **GitHub**: [Akilesh Jayakumar on GitHub](https://github.com/akileshjayakumar)
