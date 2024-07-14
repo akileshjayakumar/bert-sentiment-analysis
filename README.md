@@ -1,6 +1,6 @@
 # BERT Sentiment Analysis
 
-This repository contains a project for training a BERT model for sentiment analysis on the IMDb dataset and uploading the trained model to Hugging Face.
+This repository provides an introductory practice project for training a BERT model for sentiment analysis using the IMDb dataset and uploading the trained model to Hugging Face.
 
 ## Table of Contents
 
@@ -9,15 +9,16 @@ This repository contains a project for training a BERT model for sentiment analy
 - [Training the Model](#training-the-model)
 - [Uploading to Hugging Face](#uploading-to-hugging-face)
 - [Usage](#usage)
-- [License](#license)
+- [Contributing](#contributing)
+- [Contact Information](#contact-information)
 
 ## Introduction
 
-This project demonstrates how to fine-tune a pre-trained BERT model for sentiment analysis using the IMDb dataset. The trained model is then uploaded to Hugging Face, making it available for use by others.
+This project demonstrates how to fine-tune a pre-trained BERT model for sentiment analysis using the IMDb dataset. The trained model is then uploaded to Hugging Face, making it available for others to use.
 
 ## Setup
 
-To run this project, you need to install the necessary dependencies. You can do this by running:
+To run this project, you need to install the necessary dependencies. Use the following command to install them:
 
 ```bash
 pip install transformers datasets torch huggingface_hub
@@ -25,20 +26,20 @@ pip install transformers datasets torch huggingface_hub
 
 ## Training the Model
 
-The `train_and_upload_bert_sentiment_model.ipynb` notebook contains the code for training the BERT model. Follow these steps to train the model:
+The training process is contained in the `train_and_upload_bert_sentiment_model.ipynb` notebook. Follow these steps to train the model:
 
-1. Clone this repository:
+1. Clone this repository and navigate to the directory:
     ```bash
     git clone https://github.com/your-username/bert-sentiment-analysis.git
     cd bert-sentiment-analysis
     ```
 
-2. Open the `train_and_upload_bert_sentiment_model.ipynb` notebook in Jupyter Notebook or JupyterLab.
+2. Open the `train_and_upload_bert_sentiment_model.ipynb` notebook using Jupyter Notebook or JupyterLab.
 
 3. Run all cells in the notebook to train the model on the IMDb dataset. The training process includes:
-    - Loading the dataset
-    - Tokenizing the text
-    - Fine-tuning the BERT model
+    - Loading the IMDb dataset
+    - Tokenizing the text data
+    - Fine-tuning the pre-trained BERT model
     - Saving the trained model
 
 ## Uploading to Hugging Face
@@ -50,7 +51,7 @@ After training the model, you can upload it to Hugging Face using the `huggingfa
     huggingface-cli login
     ```
 
-2. Run the upload script in the notebook to upload your model:
+2. Use the following script in the notebook to upload your model:
     ```python
     from huggingface_hub import HfApi, HfFolder
 
@@ -72,7 +73,7 @@ Replace `your-username` with your Hugging Face username and `sentiment-analysis-
 
 ## Usage
 
-Once the model is uploaded to Hugging Face, you can use it in your projects. Here is an example of how to load and use the model for sentiment analysis:
+Once the model is uploaded to Hugging Face, you can use it in your projects. Here's an example of how to load and use the model for sentiment analysis:
 
 ```python
 from transformers import pipeline
@@ -88,18 +89,40 @@ print(result)
 
 ## Contributing
 
-Your contributions are welcome! If you have ideas for improvements or new features:
+Your contributions are welcome! If you have ideas for improvements or new features, follow these steps to contribute:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Submit a pull request.
+1. **Fork the Repository**:
+   - Click the "Fork" button at the top right of the repository page to create a copy in your GitHub account.
+
+2. **Create a New Branch**:
+   - Open your terminal and switch to the repository directory.
+   - Create and switch to a new branch:
+     ```bash
+     git checkout -b feature-branch
+     ```
+
+3. **Commit Your Changes**:
+   - Make your desired changes in the code.
+   - Stage and commit your changes with a descriptive message:
+     ```bash
+     git commit -am 'Add new feature: description'
+     ```
+
+4. **Push to the Branch**:
+   - Push your changes to the newly created branch in your forked repository:
+     ```bash
+     git push origin feature-branch
+     ```
+
+5. **Submit a Pull Request**:
+   - Go to the original repository and click on the "Pull Requests" tab.
+   - Click the "New Pull Request" button.
+   - Select your branch and provide a clear description of your changes.
 
 ## Contact Information
 
-For more information, please reach out to me at:
+For more information or if you have any questions, please reach out:
 
-- **Email**: jayakuma006@mymail.sim.edu.sg
+- **Email**: [jayakuma006@mymail.sim.edu.sg](mailto:jayakuma006@mymail.sim.edu.sg)
 - **LinkedIn**: [Akilesh Jayakumar on LinkedIn](https://www.linkedin.com/in/akileshjayakumar/)
 - **GitHub**: [Akilesh Jayakumar on GitHub](https://github.com/akileshjayakumar)
